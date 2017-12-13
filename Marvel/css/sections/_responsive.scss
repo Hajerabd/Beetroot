@@ -1,0 +1,73 @@
+.responsive {
+    height: 690px;
+    width: 100%;
+    background: $darkWhite url('./../img/responsive/responsive-bg.png') center no-repeat;
+    &_container {
+        padding-top: 180px;
+        // height: 470px;  
+        // display: flex;
+        // flex-direction: column; 
+        // justify-content: space-between; 
+    }
+    &_title {
+        color: $darkGray;
+        font-family: Montserrat;
+        font-size: 26px;
+        font-weight: 1700;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 55px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: 'Responsive';
+            position: absolute;
+            width: 50%;
+            height: 70px;
+            top: 50%;
+            transform: translateY(-45%);
+            color: $lightGray;
+            font-family: Montserrat;
+            font-size: 72px;
+            font-weight: 900;
+            text-transform: uppercase;
+            z-index: -1;
+        }
+    }
+    &_text {
+        font-size: 16px;
+        font-weight: 400;
+        width: 550px;
+        margin-bottom: 55px;
+        color: $darkGray;
+        line-height: 24px;
+    }
+    &_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        &-item {
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: 400;
+            color: $gray;
+        }
+    }
+    &_btn {
+        width: 130px;
+        height: 50px;
+        background-color: $yellow;
+        font: $darkGray;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: 700;
+        &:hover {
+            background-color: $darkGray;
+            color: $yellow;
+        }
+    }
+} 
+

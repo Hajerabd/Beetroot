@@ -1,0 +1,178 @@
+.about {
+    height: 1415px;
+    background: $darkWhite url('./../img/about/about-bg.png') center no-repeat;
+    &__container {
+        height: 1300px;
+        margin-top: 135px;
+        // background-color: lightcyan;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__title {
+        color: $darkGray;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin: 0 auto;
+        margin-top: 10px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: 'About';
+            position: absolute;
+            width: 50%;
+            height: 70px;
+            top: 50%;
+            left: 17%;
+            transform: translateY(-45%);
+            color: $lightGray;
+            font-family: Montserrat;
+            font-size: 90px;
+            font-weight: 900;
+            text-transform: uppercase;
+            z-index: -1;
+
+
+        }
+    }
+    &__text {
+        color: $darkGray2;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+        &-item {
+            width: 226px;
+            height: 62px;
+            background-color: $darkGray;
+            color: $yellow;
+            margin: 0 12px;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            border: none;
+            &:hover {
+                background-color: $yellow;
+                color: $black; 
+            }
+        }
+    }
+    &__services {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        &-item {
+            width: 360px;
+            height: 100%;
+            background-color: $darkGray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            &:hover .about__services-overlay {
+                opacity: 1;
+                box-shadow: 0px 0px 42px -2px rgba(112,112,112,0.7);
+              }
+           
+            &--icon {
+                font-size: 136px;
+                font-weight: 400;
+                color: $yellow;
+                margin: 70px 0 40px 0;
+            }
+            &--title {
+                color: $white;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-weight: 700;  
+            }
+        }
+        &-overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.7s ease;
+            background-color:$yellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &--icon {
+                font-size: 136px;
+                font-weight: 400;
+                color: $black;
+                margin: 50px 0 40px 0;
+                transform: translateY(-15%);
+            }
+            &--title {
+                color: $white;
+                font-family: Montserrat;
+                font-size: 20px;
+                font-weight: 700;
+                transform: translateY(-200%);  
+            }
+            &--text {
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                width: 95%;
+                margin: 0 auto;
+                color: $white;
+               
+            }
+        }
+    }
+    &__subtitle {
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        color: $darkGray;
+        margin: 0 auto;
+    }
+    &__stats {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        &-wrapper {
+
+            &--number {
+                color: $darkGray;
+                font-family: Montserrat;
+                font-size: 46px;
+                font-weight: 700;
+                text-transform: uppercase;
+                
+            }
+        }
+
+       
+    }
+
+    
+} 
+
+
+
+
+    

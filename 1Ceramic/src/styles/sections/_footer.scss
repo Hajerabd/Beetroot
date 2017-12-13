@@ -1,0 +1,70 @@
+.footer {
+  min-height: 100px;
+  color:$dBlue;
+  padding-top: 30px;
+  &__social-list {
+    width: 100%;
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+  }
+  &__social-item {
+    color:$dBlue;
+    margin: 0 13px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    &:hover {
+      color: $blue;
+    }
+  }
+  
+  &__copyright {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+    @media (max-width: 620px) {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+
+.button-up {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  color: $dBlue;
+  font-weight: 100;
+  background: transparent;
+  border: 1px solid transparent;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  font-size: 30px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+  @media (max-width: 620px) {
+    font-size: 26px;
+    bottom: 6px;
+    right: 10px;
+  }
+}
+.button-up.is-visible {
+  opacity: 0.8;
+  pointer-events: auto;
+  &:hover {
+    color: $blue;
+  }
+  &:active {
+    color: $gray;
+  }
+
+}

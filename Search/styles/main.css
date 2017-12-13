@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F1F1F1;
+  font-family: sans-serif;
+}
+
+.form {
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 15px;
+}
+
+.input-wrapper {
+  background-color: green;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 50px;
+  padding-right: 85px;
+  border: none;
+  background-color: #F1F1F1;
+  color: #C2C2C2;
+}
+
+.btn-search {
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+  border: none; 
+}
+
+.btn-search img {
+  width: 30px;
+  height: 30px;
+}
+
+
+::-webkit-input-placeholder {
+  color:#C2C2C2;
+} 
+
+input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+
+.wrapper {
+  background-color: #efefef;
+  min-width: 625px;
+}
+
+.column {
+    
+  display: inline-block;
+  width: 32%;
+  min-height: 600px;
+  margin-right: -4px;
+  padding: 5px;
+  vertical-align: middle;
+    
+}
+
+.column:nth-child(n+2) {
+  margin-left: 2%;
+}
+
+.column-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #C2C2C2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.column-item {
+  
+  background-color: #EBEBED;
+  padding: 15px 10px;
+  margin-bottom: 10px;
+  height: 80px;
+  border-radius: 5px;
+}
+.column-item:hover .item-title{
+  color: #f18b91;
+}
+
+.item-img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: orange;
+  margin-right: 15px;
+  vertical-align: middle;
+  overflow: hidden; 
+}
+
+ .item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} 
+
+.item-img-rounded {
+  border-radius: 50%;
+}
+
+.item-title {
+  display: inline-block;
+  font-size: 16px;
+    
+  color: #C2C2C2;
+  line-height: 18px;
+  max-height: 54px;
+  overflow: hidden;
+  vertical-align: middle;
+  min-width: 50px;
+  width: 55%;
+}
+
+.column-item:hover {
+  background-color: #E4E4E6;
+  cursor: pointer;
+}
+
+
+
+

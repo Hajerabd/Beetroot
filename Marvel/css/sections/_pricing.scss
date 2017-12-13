@@ -1,0 +1,47 @@
+.pricing {
+height: 1200px;
+width: 100%;
+background:  url('./../img/pricing/prising-bg.png') center no-repeat;
+background-size: cover;
+&_container {
+     height: 950px;
+     width: 80%;
+     margin: 0 auto;
+     background-color: lightblue; 
+    }
+&_title {
+    margin: 0 auto;
+    color: $darkGray;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 55px;
+    // margin-top: 120px;
+    padding-top: 150px;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: 'pricing';
+        position: absolute;
+        width: 50%;
+        height: 70px;
+        top: 50%;
+        right: 25%;
+        transform: translate(1%, 60%);
+        color:#e6d119;
+        font-family: Montserrat;
+        font-size: 85px;
+        font-weight: 900;
+        text-transform: uppercase;
+        z-index: -1;
+        }
+    }
+&_cover  {
+    display: flex;
+    justify-content: center;
+    }
+}
+

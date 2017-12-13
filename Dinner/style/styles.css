@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Trebuchet MS”, Trebuchet, Arial, sans-serif";
+    color: #fff;
+    background-color: #393D43;
+}
+/*для правильного позиционирования*/
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+    padding: 0;
+    margin: 0;
+
+}
+.container {
+    width: 100mv;
+    min-height: 100mh;
+}
+.header {
+    background-color: #494E55;
+    padding: 20px 15px;
+    text-align: center;
+    color: #EA8082;
+
+}
+
+.header-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.header-description {
+  font-size: 20px;
+}
+
+.main {
+  min-height: calc(100vh - 117px - 78px);
+  padding: 100px 15px;/*для того чтоб граница не наезжала на блок*/
+}
+
+.main-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+   ;
+}
+
+.form-label {
+    display: block;
+    padding: 15px;
+    background-color: #89849E;
+    cursor: pointer;
+    border: 1px solid transparent;
+    /* прозрачный блок */
+    transition: all 0.3s ease-in-out 
+    /* поступательное выпадение */
+    /* Кривая Бизье */
+
+}
+
+.form-input:checked~span {
+    text-decoration: line-through;
+}
+
+
+.form-title {
+    font-size: 20px;
+    padding-left: 10px;
+    position: relative;
+    padding-left: 30px;
+    
+}
+
+.form-label:hover {
+    background-color: #625F72;
+    border-top: 1px solid #fff ;
+    border-bottom: 1px solid #fff ;
+}
+
+
+.form-title:before {
+    content: '';
+    position: absolute ;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3 ease-in-out;
+    background-color: green;
+}
+
+.form-input:checked + .form-title:before {
+  background-color: red;
+  width: 25px;
+  height: 25px;
+}
+
+.form-input {
+    display: none;
+}
+
+.form-description {
+     font-size: 15px;
+     color: #B5B6C6;
+}
+
+.footer {
+  background-color: #494E55;
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 24px;
+}
+
+.button__cont {
+    height: 70px;
+    width: 700px;
+
+}
+
+.button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 70px;
+    max-width: 700px;
+    background-color: #494E55;
+    margin-top: 40px;
+    cursor: pointer;
+    border: 2px solid;
+    border-color: #393D43;
+ 
+}
+
+.buttun__text {
+    text-align: center;
+    font-size: 30px;
+    color:#EA8082; ;
+    cursor: pointer;
+    transform: translateY(-155%)
+}

@@ -1,0 +1,115 @@
+.main-screen {
+  width: 100%;
+  height: 100vh;
+  background: url('./../img/main-screen-bg.png') no-repeat;
+  background-size: cover;
+  color: $white;
+  &__logo {
+    cursor: pointer;
+  }
+  &__text-wraper {
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  &__menu {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+
+  }
+  &__title {
+    font-size: 48px;
+    font-family: "Raleway";
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.25;
+    text-align: center;
+    word-spacing: 3.5px;
+    margin-bottom: 80px;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 85px;
+      height: 2px;
+      background-color: $white;
+      top: 100px;
+      left: 50%;
+      transform: translate(-50%, -50%)
+    } 
+  }
+  &__description {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 15px;
+    line-height: 0.95em;  
+    word-spacing: 2px;
+    letter-spacing: 1px;
+  }
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    width: 95px;
+    height: 95px;
+    border: 2px solid $darkBlue;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border-top:2px solid $darkBlue ;
+      border-left:2px solid $darkBlue ;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%) rotate(-135deg);
+    }
+    &:hover {
+      border-color: $blue;
+      transition: ease-out 0.3s;
+      &:before {
+        border-color: $blue;
+        transition: ease-out 0.5s;
+      }
+    }
+    &:active {
+      border-color: $darkGray;
+      transition: ease-out 0.3s;
+      &:before {
+        border-color: $darkGray;
+        transition: ease-out 0.5s;
+      }
+    }
+  }
+}
+
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    }
+  &__item {
+    margin-top: 7px;
+    text-transform: uppercase;
+    margin-right: 50px;
+    letter-spacing: 20;
+    cursor: pointer;
+    &:hover {
+      color: $blue;
+    }
+    &:active {
+      color: $darkGray;
+    }
+    &:nth-last-child(1) {
+      margin-right: 75px;
+    }  
+  }
+}

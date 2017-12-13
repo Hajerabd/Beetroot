@@ -1,0 +1,46 @@
+ body {
+background: url(https://i0.wp.com/esprezo.ru/wp-content/uploads/2014/05/triangles-1.jpg?resize=1280%2C720) no-repeat center top / cover;
+text-align: center;
+margin: 0px;
+padding: 0px;
+font-family: Arial, sans-serif;
+}
+
+li {
+	list-style-type: none;
+}
+
+.one {
+	
+	background-color:  #aecfe8;
+	padding: 1px;
+	align: center;
+}
+
+.two {
+	
+	background-color:  #95c2e5;
+	padding: 1px;
+	align: center;
+}
+
+.three {
+	
+	background-color:  #7bb7e5;
+	padding: 1px;
+	align: center;
+}
+
+.four {
+	
+	background-color:  #66ace2;
+	padding: 1px;
+	align: center;
+}
+
+footer {
+	
+	background-color: #4d9fdd;
+	padding: 1px;
+	align: center;
+} 

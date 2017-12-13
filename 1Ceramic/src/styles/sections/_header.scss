@@ -1,0 +1,182 @@
+.header {
+  // display: none;
+  min-height: 100px;
+  width: 100%;
+  background-color: $white;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  @media (max-width: 620px) {
+    min-height: 60px;
+  }
+  @media (max-width: 400px) {
+    min-height: 50px;
+  }
+  &--fixed {
+   position: fixed;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   z-index: 10;
+   @media (max-width: 620px) {
+    position: absolute;
+  }
+ }
+  &__container {
+    height: 100%;
+    width: 90%;
+    padding-top: 18px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    @media (max-width: 1060px) {
+      padding-top: 10px;
+      flex-direction: column;
+      justify-content: center;
+     }
+     @media (max-width: 620px) {
+      width: 85%;
+      justify-content:space-between;
+      flex-direction: row;
+      flex-wrap:wrap;
+      padding-top: 10px;
+     }
+  }
+  &__logo {
+    @media (max-width: 1060px) {
+      display: flex;
+      justify-content: center;
+     }
+  }
+  &__logo-item {
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+    @media (max-width: 1060px) {
+    width: 295px;
+    height: 52px;
+    margin-bottom: 10px;
+    }
+    @media (max-width: 620px) {
+      width: 236px;
+      height: 41px;
+      margin-bottom: 0;
+   
+    }
+    @media (max-width: 400px) {
+      width: 172px;
+      height: 31px;
+
+    }
+  }
+  &__nav {
+    min-width: 50%;
+    @media (max-width: 620px) {
+      display: none;
+    }
+    &--open {
+      width: 100%;
+      display: block;
+    }
+    
+  }
+  &__nav-list {
+    display: flex;
+    flex-wrap: nowrap;
+    // justify-content: space-between;
+    justify-content: flex-end;
+    @media (max-width: 620px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+     }
+  }
+  &__nav-item {
+    &--active {
+      color: $blue;
+    }
+    &:hover {
+      color: darken($color:$blue , $amount: 20%);
+    }
+    &:active {
+      color: $blue;
+    }
+  }
+  &__li {
+    text-transform: uppercase;
+    margin: 0 15px;
+    font-weight: 600;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    @media (max-width: 1050px) {
+      font-size: 14px;
+     }
+     @media (max-width: 620px) {
+       display: block;
+       width: 100%;
+      margin-right: 0px;
+      margin: 8px;
+     }
+  }
+   
+    
+  
+  &__button {
+    width: 24px;
+    height: 20px;
+    display: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+    &:hover span {
+      background-color: $blue;
+    }
+    @media (max-width: 620px) {
+      display: block;
+    }
+    @media (max-width: 400px) {
+      // margin-right: 8px;
+      display: block;
+    }
+    
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: $dBlue;
+      margin-bottom: 6px;
+      transition: all 0.3s ease-in-out;
+      
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+    &--animate {
+      position: relative;
+      border: none;
+      background-color: transparent;
+      span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &:first-of-type {
+          transform: translate(-50%, -175%) rotate(-135deg);
+        }
+        &:nth-of-type(2) {
+          opacity: 0;
+          transform: scale(0);
+        }
+        &:last-of-type {
+          transform: translate(-50%, -175%) rotate(135deg);
+        }
+      }
+    }
+  }
+}
+
+.active {
+  background-color:red;
+}

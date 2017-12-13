@@ -1,0 +1,113 @@
+.design {
+    height: 950px;
+    width: 85%;
+    background:  url('./../img/design/design-bg.png') left bottom no-repeat;
+    display: flex;
+    // flex-direction: column;
+    justify-content: flex-end;
+    // margin-top: 200px;
+    &_container {
+        height: 670px;
+        width: 560px;
+        margin-top: 200px;
+        // margin: 0 auto; 
+        // background-color: lightcyan;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &_title {
+        width: 100%;
+        color: $darkGray;
+        font-family: Montserrat;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 150px;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: 'Service';
+            position: absolute;
+            width: 50%;
+            height: 70px;
+            top: 50%;
+            left: 0;
+            transform: translateY(-45%);
+            color: $lightGray;
+            font-family: Montserrat;
+            font-size: 90px;
+            font-weight: 700;
+            text-transform: uppercase;
+            z-index: -1;
+        }
+    }
+    &_item-wraper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        // position: relative;
+        z-index: 10;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 455px;
+            height: 7px;
+            // color: $lightGray;
+            color:red;
+            z-index: 9;
+        }
+    }
+    &_item {
+        width: calc(100%/2);
+        border: 1px solid transparent;
+        &--left {
+            border: 1px solid transparent;
+            border-top: $lightGray 1px solid;
+        }
+        &--right {
+            border: 1px solid transparent;
+            border-right: $lightGray 1px solid;
+        }
+        &--top {
+            border: 1px solid transparent;
+            border-top: $lightGray 1px solid;
+            border-right: $lightGray 1px solid;
+        }
+        &-icon {
+            width: 100%;
+            font-size: 48px;
+            font-weight: 400;
+            line-height: 22px;                
+            color: $darkGray;
+            text-align: center;
+            margin-top: 35px;
+            margin-bottom: 35px;
+  
+        }
+        &-title {
+            width: 90%;
+            margin: 0 auto;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $darkGray;
+            text-align: center;
+            
+        }
+        &-text {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+            text-align: center;
+            margin-bottom: 60px;
+
+        }
+    }
+}
