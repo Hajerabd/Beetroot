@@ -1,0 +1,123 @@
+
+.popup {
+  display: none;
+  &__active {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.837);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999999; 
+  }
+  &__ticket {
+    min-width: 946px;
+    height: 540px;
+    background: url('./../img/ticket-bg.png') no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  &__title-wrapper {
+    margin-top: 54px;
+    height: 216px;
+    width: 700px;
+    border: 6px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    &::before{
+      content: "";
+      position:absolute;
+      top: 62px;
+      left: 130px;
+      bottom: 0;
+      height: 216px;
+      width: 700px;
+      margin-bottom: 0;
+      background: transparent;
+      border: 6px solid rgba(65, 64, 65, 0.158);
+    }
+  }
+  &__title {
+    min-height: 164px;
+    font-size: 140px;
+    padding: 12px 80px 0 80px;
+    text-transform: uppercase;
+    color: #000000;
+    vertical-align: center;
+    background-color: #fff;
+    box-shadow: 6px 6px 5px 2px rgba(85, 84, 85, 0.234);
+    text-shadow: 6px 6px 2px rgba(150, 150, 150, 0.53);
+  }
+  &__subtitle {
+    font-size: 54px;
+    text-transform: uppercase;
+    font-family:"RadioRoad" ;
+    font-weight: 600; 
+    margin-bottom: 20px;
+  }
+  &__decor {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 30px;
+  }
+  &__pencil {
+    margin: 0 25px;
+  }
+  &__scratched-field {
+    width: 582px;
+    height: 72px;
+    position: absolute;
+    bottom: 0.9%;
+    left: -0.63%;
+    z-index: 999;
+  }
+  &__glow {
+    position: absolute;
+    content: '';
+    top: 432px;
+    left: 178px;
+    width: 578px;
+    height: 66px;
+    border-radius: 50px;
+    text-align: center;
+    background-color:#595555;
+    border: 1px solid transparent;    
+    -webkit-transition: border 2s linear, box-shadow 2s linear;
+       -moz-transition: border 2s linear, box-shadow 2s linear;
+            transition: border 2s linear, box-shadow 2s linear;
+    z-index: 1;
+  }
+  &__glow.active {
+    z-index: 1;
+    box-shadow: 0px 0px 2px 18px rgb(41, 41, 41);
+  } 
+  
+  &__shine {
+    position: absolute;
+    content: '';
+    top: 432px;
+    left: 178px;
+    width: 578px;
+    height: 66px;
+    border-radius: 50px;
+    background-color: pink;
+    z-index: 99999999;
+    &--hide {
+      display: none;  
+    }
+  }
+  
+}
+
+
+
+
+
